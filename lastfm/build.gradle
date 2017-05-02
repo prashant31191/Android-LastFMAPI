@@ -1,5 +1,24 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
+task createPom << {
+    pom {
+        project {
+            groupId 'org.example'
+            artifactId 'test'
+            version '0.1'
+
+            inceptionYear '2017'
+            licenses {
+                license {
+                    name 'MIT'
+                    url 'https://raw.githubusercontent.com/boswelja/Android-LastFMAPI/master/LICENSE'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("pom.xml")
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
