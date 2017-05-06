@@ -1,5 +1,4 @@
-# Android-LastFMAPI
-[ ![Download](https://api.bintray.com/packages/boswelja/maven/lastfm-wrapper/images/download.svg) ](https://bintray.com/boswelja/maven/lastfm-wrapper/_latestVersion)
+# Android-LastFMAPI[ ![Download](https://api.bintray.com/packages/boswelja/maven/lastfm-wrapper/images/download.svg) ](https://bintray.com/boswelja/maven/lastfm-wrapper/_latestVersion)
 A wrapper for the Last FM web API
 
 ## Include
