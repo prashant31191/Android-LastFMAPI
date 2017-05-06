@@ -8,6 +8,7 @@ dependencies {
   repositories {
     jcenter()
   }
-  compile 'com.boswelja:lastfm-wrapper:[latest_version](https://bintray.com/boswelja/maven/lastfm-wrapper/_latestVersion)'
+  compile 'com.boswelja:lastfm-wrapper:{Latest Version}'
 }
 ```
+Where {Latest Version} is the version shown by the download badge above
