@@ -14,13 +14,13 @@ dependencies {
 ```
 Where {Latest Version} is the version shown by the download badge above
 
-##Usage
+## Usage
 ```java
 LastFMRequest request = new LastFMRequest() // Create the request
                 .setApiKey(context.getString(R.string.lastfm_api_key)) //REQUIRED Sets the API key
 ```
 
-###Fetching artist info
+### Fetching artist info
 ```java
 request
     .requestArtist()    //Returns a new ArtistTask for fetching info about an artist
@@ -42,7 +42,7 @@ request
         .build(); //Create and send the request
 ```
 
-###Fetching album info
+### Fetching album info
 ```java
 request
     .requestAlbum()    //Returns a new AlbumTask for fetching info about an artist
@@ -64,7 +64,7 @@ request
         .build(); //Create and send the request
 ```
 
-###Setting a custom client
+### Setting a custom client
 You can choose to use your own OkHttpClient by passing it to your LastFMRequest class with:
 ```java
 .setCustomClient(client);
