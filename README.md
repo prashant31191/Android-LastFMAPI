@@ -9,7 +9,7 @@ dependencies {
   repositories {
     jcenter()
   }
-  compile 'com.boswelja:lastfm-wrapper:{Latest Version}'
+  compile 'com.boswelja:lastfm-wrapper:{Latest Version}@aar'
 }
 ```
 Where {Latest Version} is the version shown by the download badge above
