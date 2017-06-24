@@ -16,6 +16,7 @@
 #   public *;
 #}
 -keep class com.boswelja.lastfm.models.artist.*
+-keep class com.boswelja.lastfm.models.album.*
 -keep class com.boswelja.lastfm.LastFMApi
 -keep class com.boswelja.lastfm.LastFMRequest
 

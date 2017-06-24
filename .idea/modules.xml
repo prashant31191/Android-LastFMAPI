@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Android-LastFMAPI.iml" filepath="$PROJECT_DIR$/.idea/Android-LastFMAPI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lastfm/lastfm.iml" filepath="$PROJECT_DIR$/lastfm/lastfm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lastfm-wrapper/lastfm.iml" filepath="$PROJECT_DIR$/lastfm-wrapper/lastfm.iml" />
     </modules>
   </component>
 </project>
