@@ -6,27 +6,27 @@ import com.google.gson.annotations.SerializedName;
 
 public class Stats {
 
-    @SerializedName("listeners")
-    @Expose
-    private String listeners;
-    @SerializedName("playcount")
-    @Expose
-    private String playcount;
+  @SerializedName("listeners")
+  @Expose
+  private String listeners;
 
-    public String getListeners() {
-        return listeners;
-    }
+  @SerializedName("playcount")
+  @Expose
+  private String playcount;
 
-    public void setListeners(String listeners) {
-        this.listeners = listeners;
-    }
+  public String getListeners() {
+    return listeners;
+  }
 
-    public String getPlaycount() {
-        return playcount;
-    }
+  public void setListeners(String listeners) {
+    this.listeners = listeners;
+  }
 
-    public void setPlaycount(String playcount) {
-        this.playcount = playcount;
-    }
+  public String getPlaycount() {
+    return playcount;
+  }
 
+  public void setPlaycount(String playcount) {
+    this.playcount = playcount;
+  }
 }

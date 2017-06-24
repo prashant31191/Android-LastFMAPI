@@ -6,16 +6,15 @@ import com.google.gson.annotations.SerializedName;
 
 public class LastFMArtist {
 
-    @SerializedName("artist")
-    @Expose
-    private Artist artist;
+  @SerializedName("artist")
+  @Expose
+  private Artist artist;
 
-    public Artist getArtist() {
-        return artist;
-    }
+  public Artist getArtist() {
+    return artist;
+  }
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
-
+  public void setArtist(Artist artist) {
+    this.artist = artist;
+  }
 }

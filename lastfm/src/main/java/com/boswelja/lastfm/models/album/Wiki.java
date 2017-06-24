@@ -6,38 +6,39 @@ import com.google.gson.annotations.SerializedName;
 
 public class Wiki {
 
-    @SerializedName("published")
-    @Expose
-    private String published;
-    @SerializedName("summary")
-    @Expose
-    private String summary;
-    @SerializedName("content")
-    @Expose
-    private String content;
+  @SerializedName("published")
+  @Expose
+  private String published;
 
-    public String getPublished() {
-        return published;
-    }
+  @SerializedName("summary")
+  @Expose
+  private String summary;
 
-    public void setPublished(String published) {
-        this.published = published;
-    }
+  @SerializedName("content")
+  @Expose
+  private String content;
 
-    public String getSummary() {
-        return summary;
-    }
+  public String getPublished() {
+    return published;
+  }
 
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
+  public void setPublished(String published) {
+    this.published = published;
+  }
 
-    public String getContent() {
-        return content;
-    }
+  public String getSummary() {
+    return summary;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+  public void setSummary(String summary) {
+    this.summary = summary;
+  }
 
+  public String getContent() {
+    return content;
+  }
+
+  public void setContent(String content) {
+    this.content = content;
+  }
 }

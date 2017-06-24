@@ -6,71 +6,75 @@ import com.google.gson.annotations.SerializedName;
 
 public class Track {
 
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("url")
-    @Expose
-    private String url;
-    @SerializedName("duration")
-    @Expose
-    private String duration;
-    @SerializedName("@attr")
-    @Expose
-    private Attr attr;
-    @SerializedName("streamable")
-    @Expose
-    private Streamable streamable;
-    @SerializedName("artist")
-    @Expose
-    private Artist artist;
+  @SerializedName("name")
+  @Expose
+  private String name;
 
-    public String getName() {
-        return name;
-    }
+  @SerializedName("url")
+  @Expose
+  private String url;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  @SerializedName("duration")
+  @Expose
+  private String duration;
 
-    public String getUrl() {
-        return url;
-    }
+  @SerializedName("@attr")
+  @Expose
+  private Attr attr;
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+  @SerializedName("streamable")
+  @Expose
+  private Streamable streamable;
 
-    public String getDuration() {
-        return duration;
-    }
+  @SerializedName("artist")
+  @Expose
+  private Artist artist;
 
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public Attr getAttr() {
-        return attr;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setAttr(Attr attr) {
-        this.attr = attr;
-    }
+  public String getUrl() {
+    return url;
+  }
 
-    public Streamable getStreamable() {
-        return streamable;
-    }
+  public void setUrl(String url) {
+    this.url = url;
+  }
 
-    public void setStreamable(Streamable streamable) {
-        this.streamable = streamable;
-    }
+  public String getDuration() {
+    return duration;
+  }
 
-    public Artist getArtist() {
-        return artist;
-    }
+  public void setDuration(String duration) {
+    this.duration = duration;
+  }
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
+  public Attr getAttr() {
+    return attr;
+  }
 
+  public void setAttr(Attr attr) {
+    this.attr = attr;
+  }
+
+  public Streamable getStreamable() {
+    return streamable;
+  }
+
+  public void setStreamable(Streamable streamable) {
+    this.streamable = streamable;
+  }
+
+  public Artist getArtist() {
+    return artist;
+  }
+
+  public void setArtist(Artist artist) {
+    this.artist = artist;
+  }
 }

@@ -5,7 +5,6 @@
   <groupId>com.boswelja</groupId>
   <artifactId>lastfm-wrapper</artifactId>
   <version>0.4</version>
-  <inceptionYear>2017</inceptionYear>
   <licenses>
     <license>
       <name>MIT</name>

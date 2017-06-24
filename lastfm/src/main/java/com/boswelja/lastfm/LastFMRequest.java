@@ -8,34 +8,35 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LastFMRequest {
 
-    private String apiKey;
-    private Retrofit.Builder retrofitBuilder;
+  private String apiKey;
+  private Retrofit.Builder retrofitBuilder;
 
-    public LastFMRequest() {
-        retrofitBuilder = new Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://ws.audioscrobbler.com/2.0/");
-    }
+  public LastFMRequest() {
+    retrofitBuilder =
+        new Retrofit.Builder()
+            .addConverterFactory(GsonConverterFactory.create())
+            .baseUrl("https://ws.audioscrobbler.com/2.0/");
+  }
 
-    public ArtistTask requestArtist() {
-        Retrofit retrofit = retrofitBuilder.build();
-        LastFMApi lastFMApi = retrofit.create(LastFMApi.class);
-        return new ArtistTask(lastFMApi, apiKey);
-    }
+  public ArtistTask requestArtist() {
+    Retrofit retrofit = retrofitBuilder.build();
+    LastFMApi lastFMApi = retrofit.create(LastFMApi.class);
+    return new ArtistTask(lastFMApi, apiKey);
+  }
 
-    public AlbumTask requestAlbum() {
-        Retrofit retrofit = retrofitBuilder.build();
-        LastFMApi lastFMApi = retrofit.create(LastFMApi.class);
-        return new AlbumTask(lastFMApi, apiKey);
-    }
+  public AlbumTask requestAlbum() {
+    Retrofit retrofit = retrofitBuilder.build();
+    LastFMApi lastFMApi = retrofit.create(LastFMApi.class);
+    return new AlbumTask(lastFMApi, apiKey);
+  }
 
-    public LastFMRequest setApiKey(String apiKey) {
-        this.apiKey = apiKey;
-        return this;
-    }
+  public LastFMRequest setApiKey(String apiKey) {
+    this.apiKey = apiKey;
+    return this;
+  }
 
-    public LastFMRequest setCustomClient(final OkHttpClient client) {
-        retrofitBuilder.client(client);
-        return this;
-    }
+  public LastFMRequest setCustomClient(final OkHttpClient client) {
+    retrofitBuilder.client(client);
+    return this;
+  }
 }

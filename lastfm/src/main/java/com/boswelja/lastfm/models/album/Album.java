@@ -1,121 +1,129 @@
 
 package com.boswelja.lastfm.models.album;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
 public class Album {
 
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("artist")
-    @Expose
-    private String artist;
-    @SerializedName("mbid")
-    @Expose
-    private String mbid;
-    @SerializedName("url")
-    @Expose
-    private String url;
-    @SerializedName("image")
-    @Expose
-    private List<Image> image = null;
-    @SerializedName("listeners")
-    @Expose
-    private String listeners;
-    @SerializedName("playcount")
-    @Expose
-    private String playcount;
-    @SerializedName("tracks")
-    @Expose
-    private Tracks tracks;
-    @SerializedName("tags")
-    @Expose
-    private Tags tags;
-    @SerializedName("wiki")
-    @Expose
-    private Wiki wiki;
+  @SerializedName("name")
+  @Expose
+  private String name;
 
-    public String getName() {
-        return name;
-    }
+  @SerializedName("artist")
+  @Expose
+  private String artist;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  @SerializedName("mbid")
+  @Expose
+  private String mbid;
 
-    public String getArtist() {
-        return artist;
-    }
+  @SerializedName("url")
+  @Expose
+  private String url;
 
-    public void setArtist(String artist) {
-        this.artist = artist;
-    }
+  @SerializedName("image")
+  @Expose
+  private List<Image> image = null;
 
-    public String getMbid() {
-        return mbid;
-    }
+  @SerializedName("listeners")
+  @Expose
+  private String listeners;
 
-    public void setMbid(String mbid) {
-        this.mbid = mbid;
-    }
+  @SerializedName("playcount")
+  @Expose
+  private String playcount;
 
-    public String getUrl() {
-        return url;
-    }
+  @SerializedName("tracks")
+  @Expose
+  private Tracks tracks;
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+  @SerializedName("tags")
+  @Expose
+  private Tags tags;
 
-    public List<Image> getImage() {
-        return image;
-    }
+  @SerializedName("wiki")
+  @Expose
+  private Wiki wiki;
 
-    public void setImage(List<Image> image) {
-        this.image = image;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getListeners() {
-        return listeners;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setListeners(String listeners) {
-        this.listeners = listeners;
-    }
+  public String getArtist() {
+    return artist;
+  }
 
-    public String getPlaycount() {
-        return playcount;
-    }
+  public void setArtist(String artist) {
+    this.artist = artist;
+  }
 
-    public void setPlaycount(String playcount) {
-        this.playcount = playcount;
-    }
+  public String getMbid() {
+    return mbid;
+  }
 
-    public Tracks getTracks() {
-        return tracks;
-    }
+  public void setMbid(String mbid) {
+    this.mbid = mbid;
+  }
 
-    public void setTracks(Tracks tracks) {
-        this.tracks = tracks;
-    }
+  public String getUrl() {
+    return url;
+  }
 
-    public Tags getTags() {
-        return tags;
-    }
+  public void setUrl(String url) {
+    this.url = url;
+  }
 
-    public void setTags(Tags tags) {
-        this.tags = tags;
-    }
+  public List<Image> getImage() {
+    return image;
+  }
 
-    public Wiki getWiki() {
-        return wiki;
-    }
+  public void setImage(List<Image> image) {
+    this.image = image;
+  }
 
-    public void setWiki(Wiki wiki) {
-        this.wiki = wiki;
-    }
+  public String getListeners() {
+    return listeners;
+  }
 
+  public void setListeners(String listeners) {
+    this.listeners = listeners;
+  }
+
+  public String getPlaycount() {
+    return playcount;
+  }
+
+  public void setPlaycount(String playcount) {
+    this.playcount = playcount;
+  }
+
+  public Tracks getTracks() {
+    return tracks;
+  }
+
+  public void setTracks(Tracks tracks) {
+    this.tracks = tracks;
+  }
+
+  public Tags getTags() {
+    return tags;
+  }
+
+  public void setTags(Tags tags) {
+    this.tags = tags;
+  }
+
+  public Wiki getWiki() {
+    return wiki;
+  }
+
+  public void setWiki(Wiki wiki) {
+    this.wiki = wiki;
+  }
 }

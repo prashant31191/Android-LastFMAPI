@@ -6,27 +6,27 @@ import com.google.gson.annotations.SerializedName;
 
 public class Image {
 
-    @SerializedName("#text")
-    @Expose
-    private String text;
-    @SerializedName("size")
-    @Expose
-    private String size;
+  @SerializedName("#text")
+  @Expose
+  private String text;
 
-    public String getText() {
-        return text;
-    }
+  @SerializedName("size")
+  @Expose
+  private String size;
 
-    public void setText(String text) {
-        this.text = text;
-    }
+  public String getText() {
+    return text;
+  }
 
-    public String getSize() {
-        return size;
-    }
+  public void setText(String text) {
+    this.text = text;
+  }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
+  public String getSize() {
+    return size;
+  }
 
+  public void setSize(String size) {
+    this.size = size;
+  }
 }

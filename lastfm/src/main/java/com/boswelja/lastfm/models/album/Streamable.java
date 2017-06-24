@@ -6,27 +6,27 @@ import com.google.gson.annotations.SerializedName;
 
 public class Streamable {
 
-    @SerializedName("#text")
-    @Expose
-    private String text;
-    @SerializedName("fulltrack")
-    @Expose
-    private String fulltrack;
+  @SerializedName("#text")
+  @Expose
+  private String text;
 
-    public String getText() {
-        return text;
-    }
+  @SerializedName("fulltrack")
+  @Expose
+  private String fulltrack;
 
-    public void setText(String text) {
-        this.text = text;
-    }
+  public String getText() {
+    return text;
+  }
 
-    public String getFulltrack() {
-        return fulltrack;
-    }
+  public void setText(String text) {
+    this.text = text;
+  }
 
-    public void setFulltrack(String fulltrack) {
-        this.fulltrack = fulltrack;
-    }
+  public String getFulltrack() {
+    return fulltrack;
+  }
 
+  public void setFulltrack(String fulltrack) {
+    this.fulltrack = fulltrack;
+  }
 }

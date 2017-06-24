@@ -6,38 +6,39 @@ import com.google.gson.annotations.SerializedName;
 
 public class Artist {
 
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("mbid")
-    @Expose
-    private String mbid;
-    @SerializedName("url")
-    @Expose
-    private String url;
+  @SerializedName("name")
+  @Expose
+  private String name;
 
-    public String getName() {
-        return name;
-    }
+  @SerializedName("mbid")
+  @Expose
+  private String mbid;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  @SerializedName("url")
+  @Expose
+  private String url;
 
-    public String getMbid() {
-        return mbid;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setMbid(String mbid) {
-        this.mbid = mbid;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public String getUrl() {
-        return url;
-    }
+  public String getMbid() {
+    return mbid;
+  }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+  public void setMbid(String mbid) {
+    this.mbid = mbid;
+  }
 
+  public String getUrl() {
+    return url;
+  }
+
+  public void setUrl(String url) {
+    this.url = url;
+  }
 }

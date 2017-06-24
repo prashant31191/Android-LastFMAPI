@@ -7,7 +7,6 @@ local.properties
 
 # IntelliJ project files
 *.iml
-.idea/
 
 # Misc
 .DS_Store

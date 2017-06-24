@@ -6,49 +6,51 @@ import com.google.gson.annotations.SerializedName;
 
 public class Bio {
 
-    @SerializedName("links")
-    @Expose
-    private Links links;
-    @SerializedName("published")
-    @Expose
-    private String published;
-    @SerializedName("summary")
-    @Expose
-    private String summary;
-    @SerializedName("content")
-    @Expose
-    private String content;
+  @SerializedName("links")
+  @Expose
+  private Links links;
 
-    public Links getLinks() {
-        return links;
-    }
+  @SerializedName("published")
+  @Expose
+  private String published;
 
-    public void setLinks(Links links) {
-        this.links = links;
-    }
+  @SerializedName("summary")
+  @Expose
+  private String summary;
 
-    public String getPublished() {
-        return published;
-    }
+  @SerializedName("content")
+  @Expose
+  private String content;
 
-    public void setPublished(String published) {
-        this.published = published;
-    }
+  public Links getLinks() {
+    return links;
+  }
 
-    public String getSummary() {
-        return summary;
-    }
+  public void setLinks(Links links) {
+    this.links = links;
+  }
 
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
+  public String getPublished() {
+    return published;
+  }
 
-    public String getContent() {
-        return content;
-    }
+  public void setPublished(String published) {
+    this.published = published;
+  }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+  public String getSummary() {
+    return summary;
+  }
 
+  public void setSummary(String summary) {
+    this.summary = summary;
+  }
+
+  public String getContent() {
+    return content;
+  }
+
+  public void setContent(String content) {
+    this.content = content;
+  }
 }

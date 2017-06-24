@@ -6,38 +6,39 @@ import com.google.gson.annotations.SerializedName;
 
 public class Link {
 
-    @SerializedName("#text")
-    @Expose
-    private String text;
-    @SerializedName("rel")
-    @Expose
-    private String rel;
-    @SerializedName("href")
-    @Expose
-    private String href;
+  @SerializedName("#text")
+  @Expose
+  private String text;
 
-    public String getText() {
-        return text;
-    }
+  @SerializedName("rel")
+  @Expose
+  private String rel;
 
-    public void setText(String text) {
-        this.text = text;
-    }
+  @SerializedName("href")
+  @Expose
+  private String href;
 
-    public String getRel() {
-        return rel;
-    }
+  public String getText() {
+    return text;
+  }
 
-    public void setRel(String rel) {
-        this.rel = rel;
-    }
+  public void setText(String text) {
+    this.text = text;
+  }
 
-    public String getHref() {
-        return href;
-    }
+  public String getRel() {
+    return rel;
+  }
 
-    public void setHref(String href) {
-        this.href = href;
-    }
+  public void setRel(String rel) {
+    this.rel = rel;
+  }
 
+  public String getHref() {
+    return href;
+  }
+
+  public void setHref(String href) {
+    this.href = href;
+  }
 }

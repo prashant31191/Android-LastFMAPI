@@ -6,27 +6,27 @@ import com.google.gson.annotations.SerializedName;
 
 public class Tag {
 
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("url")
-    @Expose
-    private String url;
+  @SerializedName("name")
+  @Expose
+  private String name;
 
-    public String getName() {
-        return name;
-    }
+  @SerializedName("url")
+  @Expose
+  private String url;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getUrl() {
-        return url;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+  public String getUrl() {
+    return url;
+  }
 
+  public void setUrl(String url) {
+    this.url = url;
+  }
 }

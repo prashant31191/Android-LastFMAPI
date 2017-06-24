@@ -1,44 +1,45 @@
 
 package com.boswelja.lastfm.models.artist;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
 public class Artist_ {
 
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("url")
-    @Expose
-    private String url;
-    @SerializedName("image")
-    @Expose
-    private List<Image_> image = null;
+  @SerializedName("name")
+  @Expose
+  private String name;
 
-    public String getName() {
-        return name;
-    }
+  @SerializedName("url")
+  @Expose
+  private String url;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  @SerializedName("image")
+  @Expose
+  private List<Image_> image = null;
 
-    public String getUrl() {
-        return url;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public List<Image_> getImage() {
-        return image;
-    }
+  public String getUrl() {
+    return url;
+  }
 
-    public void setImage(List<Image_> image) {
-        this.image = image;
-    }
+  public void setUrl(String url) {
+    this.url = url;
+  }
 
+  public List<Image_> getImage() {
+    return image;
+  }
+
+  public void setImage(List<Image_> image) {
+    this.image = image;
+  }
 }

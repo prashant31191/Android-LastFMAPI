@@ -1,31 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
 
-task createPom << {
-    pom {
-        project {
-            groupId 'com.boswelja'
-            artifactId 'lastfm-wrapper'
-            version '0.4'
-
-            inceptionYear '2017'
-            licenses {
-                license {
-                    name 'MIT'
-                    url 'https://raw.githubusercontent.com/boswelja/Android-LastFMAPI/master/LICENSE'
-                    distribution 'repo'
-                }
-            }
-        }
-    }.writeTo("pom.xml")
-}
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 04
         versionName "0.4"
     }
@@ -39,13 +21,43 @@ android {
 }
 
 ext {
-    supportLibVersion = '25.3.1'
+    supportLibVersion = '26.0.0-beta2'
     retroFitVersion = "2.2.0"
+
+    bintrayRepo = 'maven'
+    bintrayName = 'lastfm-wrapper'
+
+    publishedGroupId = 'com.boswelja'
+    libraryName = 'lastfm-wrapper'
+    artifact = 'lastfm-wrapper'
+
+    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
+
+    siteUrl = 'https://github.com/boswelja/Android-LastFMAPI'
+    gitUrl = 'https://github.com/boswelja/Android-LastFMAPI.git'
+
+    libraryVersion = '0.4'
+
+    developerId = 'boswelja'
+    developerName = 'Jack Boswell'
+    developerEmail = 'boswelja78@gmail.com'
+
+    licenseName = 'MIT'
+    licenseUrl = 'https://raw.githubusercontent.com/boswelja/Android-LastFMAPI/master/LICENSE'
+    allLicenses = ["MIT"]
 }
 
 dependencies {
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile "com.android.support:appcompat-v7:$supportLibVersion"
     compile "com.squareup.retrofit2:retrofit:$retroFitVersion"
     compile "com.squareup.retrofit2:converter-gson:$retroFitVersion"
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

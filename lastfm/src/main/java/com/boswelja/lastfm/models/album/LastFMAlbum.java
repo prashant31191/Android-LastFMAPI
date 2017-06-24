@@ -6,16 +6,15 @@ import com.google.gson.annotations.SerializedName;
 
 public class LastFMAlbum {
 
-    @SerializedName("album")
-    @Expose
-    private Album album;
+  @SerializedName("album")
+  @Expose
+  private Album album;
 
-    public Album getAlbum() {
-        return album;
-    }
+  public Album getAlbum() {
+    return album;
+  }
 
-    public void setAlbum(Album album) {
-        this.album = album;
-    }
-
+  public void setAlbum(Album album) {
+    this.album = album;
+  }
 }
