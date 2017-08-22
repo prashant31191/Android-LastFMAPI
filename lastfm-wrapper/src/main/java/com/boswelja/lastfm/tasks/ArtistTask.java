@@ -22,12 +22,21 @@ public class ArtistTask {
         new retrofit2.Callback<LastFMArtist>() {
           @Override
           public void onResponse(Call<LastFMArtist> call, Response<LastFMArtist> response) {
-            callback.onResponse(call, response);
+              if (response.isSuccessful()) {
+                  final LastFMArtist data = response.body();
+                  if (data != null) {
+                      callback.onDataRetrieved(data);
+                  } else {
+                      callback.onResultEmpty();
+                  }
+              } else {
+                  callback.onResultEmpty();
+              }
           }
 
           @Override
           public void onFailure(Call<LastFMArtist> call, Throwable t) {
-            callback.onFailed(call, t);
+            callback.onResultFailed();
           }
         };
     return this;

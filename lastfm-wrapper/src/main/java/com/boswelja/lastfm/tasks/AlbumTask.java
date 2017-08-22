@@ -3,6 +3,7 @@ package com.boswelja.lastfm.tasks;
 import com.boswelja.lastfm.Callback;
 import com.boswelja.lastfm.LastFMApi;
 import com.boswelja.lastfm.models.album.LastFMAlbum;
+
 import retrofit2.Call;
 import retrofit2.Response;
 
@@ -22,7 +23,16 @@ public class AlbumTask {
         new retrofit2.Callback<LastFMAlbum>() {
           @Override
           public void onResponse(Call<LastFMAlbum> call, Response<LastFMAlbum> response) {
-            callback.onResponse(call, response);
+              if (response.isSuccessful()) {
+                  final LastFMAlbum data = response.body();
+                  if (data != null) {
+                      callback.onDataRetrieved(data);
+                  } else {
+                      callback.onResultEmpty();
+                  }
+              } else {
+                  callback.onResultEmpty();
+              }
           }
 
           @Override
