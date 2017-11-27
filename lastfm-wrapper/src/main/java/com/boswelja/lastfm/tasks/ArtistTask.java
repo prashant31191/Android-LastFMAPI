@@ -36,7 +36,7 @@ public class ArtistTask {
 
           @Override
           public void onFailure(Call<LastFMArtist> call, Throwable t) {
-            callback.onResultFailed();
+            callback.onFailed(t);
           }
         };
     return this;

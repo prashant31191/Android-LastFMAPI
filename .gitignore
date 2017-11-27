@@ -7,7 +7,3 @@ local.properties
 
 # IntelliJ project files
 *.iml
-
-# Misc
-.DS_Store
-lastfm/libs/

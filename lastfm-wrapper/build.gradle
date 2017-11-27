@@ -2,14 +2,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 07
-        versionName "0.7"
+        targetSdkVersion 27
+        versionCode 8
+        versionName "0.8"
     }
     buildTypes {
         release {
@@ -21,7 +21,7 @@ android {
 }
 
 ext {
-    supportLibVersion = '26.0.1'
+    supportLibVersion = '27.0.1'
     retroFitVersion = "2.3.0"
 
     bintrayRepo = 'maven'
@@ -36,11 +36,11 @@ ext {
     siteUrl = 'https://github.com/boswelja/Android-LastFMAPI'
     gitUrl = 'https://github.com/boswelja/Android-LastFMAPI.git'
 
-    libraryVersion = '0.7'
+    libraryVersion = '0.8'
 
     developerId = 'boswelja'
     developerName = 'Jack Boswell'
-    developerEmail = 'boswelja78@gmail.com'
+    developerEmail = 'boswelja@outlook.com'
 
     licenseName = 'MIT'
     licenseUrl = 'https://raw.githubusercontent.com/boswelja/Android-LastFMAPI/master/LICENSE'

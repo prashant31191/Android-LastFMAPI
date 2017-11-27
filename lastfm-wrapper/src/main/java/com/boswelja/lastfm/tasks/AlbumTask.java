@@ -3,7 +3,6 @@ package com.boswelja.lastfm.tasks;
 import com.boswelja.lastfm.Callback;
 import com.boswelja.lastfm.LastFMApi;
 import com.boswelja.lastfm.models.album.LastFMAlbum;
-
 import retrofit2.Call;
 import retrofit2.Response;
 
@@ -37,7 +36,7 @@ public class AlbumTask {
 
           @Override
           public void onFailure(Call<LastFMAlbum> call, Throwable t) {
-            callback.onFailed(call, t);
+            callback.onFailed(t);
           }
         };
     return this;

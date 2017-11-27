@@ -9,10 +9,9 @@ dependencies {
   repositories {
     jcenter()
   }
-  compile 'com.boswelja:lastfm-wrapper:{Latest Version}@aar'
+  compile 'com.boswelja:lastfm-wrapper:0.8@aar'
 }
 ```
-Where {Latest Version} is the version shown by the download badge above
 
 ## Usage
 ```java
@@ -27,16 +26,18 @@ request
     .withName("Cher")    //Name of the artist you want
     .setCallback(new Callback<LastFMArtist>() {    //Lets you do something with the result
             @Override
-            public void onResponse(Call<LastFMArtist> call, Response<LastFMArtist> response) {
-                if(response.isSuccessful()) {
-                    LastFMArtist artistInfo = response.body().getArtist() //Returns a java class with the artist info
-                    //Response successful, do what you want with the result here
-                }
+            public void onDataRetrieved(LastFMArtist data) {
+                //Response successful, do what you want with the result here
             }
 
             @Override
-            public void onFailure(Call<LastFMArtist> call, Throwable throwable) {
+            public void onFailed(Throwable throwable) {
                 //Request failed
+            }
+            
+            @Override
+            public void onResultEmpty() {
+              //No artist by that name found
             }
         })
         .build(); //Create and send the request
@@ -49,16 +50,18 @@ request
     .withQuery("Cher", "Believe")    //The albums artist and name
     .setCallback(new Callback<LastFMAlbum>() {    //Lets you do something with the result
             @Override
-            public void onResponse(Call<LastFMAlbum> call, Response<LastFMAlbum> response) {
-                if(response.isSuccessful()) {
-                    LastFMAlbum albumInfo = response.body().getArtist() //Returns a java class with the album info
-                    //Response successful, do what you want with the result here
-                }
+            public void onDataRetrieved(LastFMAlbum data) {
+                //Response successful, do what you want with the result here
             }
 
             @Override
-            public void onFailure(Call<LastFMAlbum> call, Throwable throwable) {
+            public void onFailed(Throwable throwable) {
                 //Request failed
+            }
+            
+            @Override
+            public void onResultEmpty() {
+                //No album by that name found
             }
         })
         .build(); //Create and send the request
@@ -69,6 +72,5 @@ You can choose to use your own OkHttpClient by passing it to your LastFMRequest 
 ```java
 .setCustomClient(client);
 ```
-
 
 More coming later
